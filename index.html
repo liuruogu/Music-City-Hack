@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-slider.css">
+  <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+  <script src="js/bootstrap-slider.js"></script>
+  <script src="js/bootstrap-slider.min.js"></script>
+
+
+
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:700px;background-color: #FFFFFF;}
+  #section2 {padding-top:50px;height:700px;background-color: #FFFFFF;}
+  #section3 {padding-top:50px;height:700px;background-color: #FFFFFF;}
+  #section41 {padding-top:50px;height:700px;background-color: #FFFFFF;}
+  #section42 {padding-top:50px;height:700px;background-color: #FFFFFF;}
+
+  #section3 img{
+    height: 600px;
+  }
+
+  #section41 img{
+    height: 600px;
+  }
+
+  #typeOne{
+    /*float: left;*/
+  }
+
+  #section1 img{
+    height: 600px;
+  }
+
+  .categoy{
+    float: left;
+    list-style: none;
+  }
+
+  #labels {
+    float: left;
+    padding-top: 10px;
+
+  }
+
+  #section41 img{
+    height: 600px;
+        
+  }
+
+  #ex1Slider .slider-selection {
+    background: #BABABA;
+}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Berlin Music Ecosystem</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Berlin</a></li>
+          <li><a href="#section2">District Selection</a></li>
+          <li><a href="#section3">Venues</a></li>
+          <li><a href="#section41">Labels</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1>Berlin </h1>
+<img src="img/ActKPI.jpeg" alt="...">
+
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Please select the district of berlin</h1>
+  
+  <div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Districts
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li><a href="#section3">Charlottenburg-Wilmersdorf</a></li>
+    <li><a href="#section3">Friedrichshain-Kreuzberg</a></li>
+    <li><a href="#section3">VLichtenberg</a></li>
+    <li><a href="#section3">Marzahn-Hellersdorf</a></li>
+    <li><a href="#section3">VMitte</a></li>   
+    <li><a href="#section3">Neukölln</a></li>
+    <li><a href="#section3">Pankow</a></li>
+    <li><a href="#section3">Reinickendorf</a></li>
+    <li><a href="#section3">SpandauSteglitz-Zehlendorf</a></li>
+    <li><a href="#section3">Steglitz-Zehlendorf</a></li>
+    <li><a href="#section3">Tempelhof-Schöneberg</a></li>
+    <li><a href="#section3">Treptow-Köpenick</a></li>
+    
+</div>
+</div>
+
+<div id="section3" class="container-fluid">
+<div class="col-sm-12">
+        <div class="radio" id ="typeOne">
+            <label>
+                <input type="radio" name="o3" value="checked" checked>
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Activity KPI
+            </label>
+        </div>
+        <div class="radio" id = "typeSec">
+            <label>
+                <input type="radio" name="o3" value="" >
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Divisity KPI
+                </label>
+        </div>
+    </div>
+    
+  <img id ="dataImg" src="img/buffer.jpeg" alt="...">
+</div>
+
+
+<div id="section41" class="container-fluid">
+<h1>Labels in Berlin</h1>
+
+ <div  id = "labels" class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Labels
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li>
+        <a href="#section41">Piranha Arts</a>
+        <a href="#section41">City Slang </a>
+        <a href="#section41">Universal Music</a>
+        <a href="#section41">R.O.T.</a>
+        <a href="#section41">Trailerpark</a>
+        <a href="#section41">Sinnbus</a>
+        <a href="#section41">Four Music</a>
+        <a href="#section41">Kanzleramt Records</a>
+        <a href="#section41">Ostgut Ton</a>
+        <a href="#section41">Sonar Kollektiv</a>
+        <a href="#section41">Get Physical Music</a>
+        <a href="#section41">Motor Music</a>
+        <a href="#section41">Kalleidoskop</a>
+        <a href="#section41">!K7</a>
+        <a href="#section41">Stil vor Talent</a>
+        <a href="#section41">Pampa Records</a>
+        <a href="#section41">Mobilee</a>
+        <a href="#section41">Traumton Records</a>
+        <a href="#section41">Superstar Recordings</a>
+        <a href="#section41">Snowwhite Records</a>
+    </li>
+  </ul>
+  </ul>
+</div>
+
+<ul>
+    <li class="categoy">
+        <div class="radio" id ="Emp">
+            <label>
+                <input type="radio" name="o3" value="" checked>
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Number of employees
+            </label>
+        </div></li>
+    <li class="categoy">
+        <div class="radio" id ="Rel">
+            <label>
+                <input type="radio" name="o3" value="" >
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Number of release 
+            </label>
+        </div>
+    </li>
+    <li class="categoy">
+        <div class="radio" id ="Rep">
+            <label>
+                <input type="radio" name="o3" value="" >
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Reputation
+            </label>
+        </div>
+    </li>
+    <li class="categoy">
+        <div class="radio" id ="Ind">
+            <label>
+                <input type="radio" name="o3" value="" >
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Kpi
+            </label>
+        </div>
+    </li>
+</ul>  
+
+ <img id ="dataLabel" src="img/label1.jpeg" alt="...">
+
+</div>
+<div id="section42" class="container-fluid">
+
+</div>
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+
+<script>
+    
+
+    $('#typeOne').click(function() {
+    $("#dataImg").attr("src","img/buffer.jpeg");
+});
+    $('#typeSec').click(function() {
+    $("#dataImg").attr("src","img/buffer2.jpeg");
+});
+
+    $('#Emp').click(function() {
+    $("#dataLabel").attr("src","img/label1.jpeg");
+});
+    $('#Rel').click(function() {
+    $("#dataLabel").attr("src","img/label2.jpeg");
+});
+    $('#Rep').click(function() {
+    $("#dataLabel").attr("src","img/label3.jpeg");
+});
+    $('#Ind').click(function() {
+    $("#dataLabel").attr("src","img/label4.jpeg");
+});
+
+
+</script>
+
+</html>
